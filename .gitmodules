@@ -1,7 +1,0 @@
-[submodule "Submod"]
-	url = https://github.com/NataliaJonik/Krk.git
-	branch = Development
-
-[submodule "path_to_submodule"] 
-  path = path_to_submodule 
-  url = https://github.com/NataliaJonik/Krk.git
