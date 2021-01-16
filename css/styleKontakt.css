@@ -81,7 +81,7 @@
 }
 
 .form-control:invalid:focus{
-	border-color: #e84661;
+	border-color: #fcd55a;
 }
 .form-control:valid{
 	border-color: #00537F;
