@@ -7,7 +7,7 @@
 	display:flex;
 	justify-content: center;
 	align-items: center; 
-	height:150vh;
+	height:100vh;
 	
 	font-family: 'Merriweather Sans', sans-serif;
 	background-color: #f0e9f7;
@@ -18,7 +18,7 @@
 .container-kontact{
 	width: 80%;
 	box-shadow: 0 15px 35px rgba(50,50,93,0.1),0 5px 15px rgba(0,0,0,0.07);
-	padding: 5em;
+	padding: 1em;
 	margin: 40px, 20px, 40px,20px;
 	background-color: #fff;
 }
