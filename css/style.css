@@ -202,15 +202,15 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 .btn-sm { padding: 10px 34px; font-size: 14px; }
 .btn-xs { padding: 10px 24px; font-size: 12px; }
 .btn-white { color: #121113; background: #fff; }
-.btn-white:hover { background-color: #fff; color: #121113; }
+.btn-white:hover { background-color: #fff; color:#fcd55a; }
 .btn-white.focus, .btn-white:focus { background-color: #fff; color: #121113; }
 .btn-white-outline { color: #fff; background: transparent; border: 2px solid #fff; }
-.btn-white-outline:hover { background-color: #fff; color: #161718; }
+.btn-white-outline:hover { background-color: #fff; color: #fcd55a; }
 .btn-white-outline.focus, .btn-white-outline:focus { background-color: #fff; color: #161718; }
 .btn-link { color: #121113; font-size: 14px; font-weight: 800; text-transform: capitalize; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; position: relative; letter-spacing: 0px; }
 .btn-link i { font-size: 14px; padding-left: 10px; }
-.btn-link:hover { color: #28334AFF; text-decoration: none; }
-.btn-link:hover i { color: #28334AFF; text-decoration: none; }
+.btn-link:hover { color: #fcd55a; text-decoration: none; }
+.btn-link:hover i { color:#fcd55a; text-decoration: none; }
 button.btn { margin-right: -1px; }
 
 /*-----------------------------------
@@ -427,7 +427,7 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 .top-header-content { font-size: 14px; }
 .top-social { border-right: 1px solid #eee; padding-top: 6px; padding-bottom: 6px; }
 .top-social a { font-size: 14px; color: #36333c; }
-.top-social a:hover { color: #cf1222; }
+.top-social a:hover { color: #fcd55a; }
 .header-wrapper { background-color: #fff; border-bottom: 1px solid #eee; z-index: 9; position: relative; }
 .header { padding-top: 25px; padding-bottom: 20px; }
 .logo { font-size: 14px; margin-bottom: 0px; font-family: sans-serif; font-style: italic; font-stretch: expanded; }
@@ -546,17 +546,17 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 .footer-widget ul { padding: 0; }
 .footer-widget ul li { line-height: 2; list-style: none; }
 .footer-widget ul li a { font-size: 14px; color: #fff; }
-.footer-widget ul li a:hover { color:  #c22532ee; }
+.footer-widget ul li a:hover { color: #fcd55a; }
 .footer-widget .angle li:before { color: #fff; }
 .footer-widget .social-icon a { color: #fffF; }
-.footer-widget .social-icon a:hover { color: #cf1222; }
+.footer-widget .social-icon a:hover { color: #fcd55a; }
 .ft-contact-info { margin-bottom: 16px; position: relative; }
 .ft-contact-icon { position: absolute; display: inline-block; font-size: 18px; color: #fff; }
 .ft-contact-text { padding-left: 30px; display: inline-block; }
 .btn-twitter { background: #00aced; color: #fff; }
 .btn-twitter:hover, .btn-twitter:active { background: #0084b4; color:  rgba#c22532ee; }
 .btn-facebook { background: #3B5997; color: #fff; }
-.btn-facebook:hover, .btn-facebook:active { background: #2d4372; color:  #c22532ee; }
+.btn-facebook:hover, .btn-facebook:active { background: #2d4372; color:  #fcd55a; }
 .btn-googleplus { background: #D64937; color: #fff; }
 .btn-googleplus { background: #D64937; color: #fff; }
 .btn-googleplus:hover, .btn-googleplus:active { background: #b53525; color:  #c22532ee; }
@@ -565,7 +565,7 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 .btn-pinterest { background-color: #c8232c; color: #fff; }
 .btn-pinterest:hover, .btn-pinterest:active { background-color: #b0171f; color:  #c22532ee; }
 .btn-linkedin { background: #0074A1; color: #fff; }
-.btn-linkedin:hover, .btn-linkedin:active { background: #006288; color: #c22532ee; }
+.btn-linkedin:hover, .btn-linkedin:active { background: #006288; color:#fcd55a }
 .btn-youtube { background-color: #ff0000; color: #fff; }
 .btn-youtube:hover, .btn-youtube:active { background-color: #fe2224; color: #c22532ee; }
 .social-text { font-size: 14px; text-transform: uppercase; padding-left: 10px; letter-spacing: 1px; }
@@ -576,7 +576,7 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 .ft-social ul li a { font-size: 14px; padding-right: 10px; font-weight: 400; }
 .social-icon { }
 .btn-social-circle { -webkit-font-smoothing: antialiased; font-size: 12px; margin-right: 2px; display: inline-block; line-height: 1; color: #f3f2f5; background-color: #121113; border-radius: 100%; width: 34px; height: 34px; padding: 12px; }
-.btn-social-circle:hover { color:  rgba(70, 91, 136, 0.479); background-color:#c22532ee; }
+.btn-social-circle:hover { color:  #fcd55a; background-color:#c22532ee; }
 .btn-social-icon { -webkit-font-smoothing: antialiased; font-size: 14px; padding-right: 28px; display: inline-block; width: 0px; height: 0px; line-height: 1; color: #121113; }
 
 /*-------------- tiny footer ------------*/
@@ -584,8 +584,8 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 
 /*--- easetemplate copyright link --*/
 .copyrightlink { color: #28334AFF; }
-.copyrightlink:hover { color: #28334AFF; }
-
+.copyrightlink:hover { color: #fcd55a; }
+AF
 /*-------------- tiny footer ------------*/
 
 /*--- easetemplate copyright link --*/
@@ -713,8 +713,8 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 .testimonial-carousel .owl-theme .owl-nav { line-height: 1; text-align: center; -webkit-tap-highlight-color: transparent; }
 .testimonial-carousel .owl-theme .owl-nav .owl-prev { position: absolute; top: 72%; left: 100px; color: #ccc9c4; font-size: 60px; margin: 12px; padding: 10px; background: transparent; display: inline-block; cursor: pointer; border-radius: 0px; height: 40px; width: 40px; }
 .testimonial-carousel .owl-theme .owl-nav .owl-next { position: absolute; top: 72%; right: 100px; color: #ccc9c4; font-size: 60px; margin: 12px; padding: 10px; background: transparent; display: inline-block; cursor: pointer; border-radius: 0px; height: 40px; width: 40px; }
-.testimonial-carousel .owl-theme .owl-nav .owl-prev:hover { background-color: transparent; text-decoration: none; color: #28334AFF; }
-.testimonial-carousel .owl-theme .owl-nav .owl-next:hover { background-color: transparent; text-decoration: none; color: #28334AFF; }
+.testimonial-carousel .owl-theme .owl-nav .owl-prev:hover { background-color: transparent; text-decoration: none; color: rgb(7, 8, 8); }
+.testimonial-carousel .owl-theme .owl-nav .owl-next:hover { background-color: transparent; text-decoration: none; color: rgb(7, 8, 8);; }
 
 /*--------------------------
 10.6  Contact us
