@@ -3,11 +3,11 @@
 	--font-hover-color: #fcd55a;
 }
 
-body{
+.main-concept{
 	display:flex;
 	justify-content: center;
 	align-items: center; 
-	height:100vh;
+	height:150vh;
 	
 	font-family: 'Merriweather Sans', sans-serif;
 	background-color: #f0e9f7;
@@ -15,8 +15,8 @@ body{
 
 
 
-.container{
-	width: 90%;
+.container-kontact{
+	width: 80%;
 	box-shadow: 0 15px 35px rgba(50,50,93,0.1),0 5px 15px rgba(0,0,0,0.07);
 	padding: 5em;
 	margin: 40px, 20px, 40px,20px;
@@ -90,8 +90,9 @@ body{
 .btn{
 	font-family: 'Merriweather Sans', sans-serif;
 	background: 0 0 #fff;
-	background-color: #fcd55a;
-	border: 2px solid #fcd55a;
+	background-color: #EE2737;;
+	border: 2px solid #EE2737;
+	color:#fff;
 	font-size: 17px; 
 	text-transform: capitalize; 
 	font-weight: 700; 
@@ -109,9 +110,9 @@ body{
 }
 
 .btn:hover{
-	border-color: #efbf25;
-	background-color: #efbf25; 
-	border: 2px solid #efbf25;
+	border-color: #c22532ee;
+	background-color: #c22532ee; 
+	border: 2px solid #c22532ee;
 	border-radius: none;
  
 }
