@@ -1,3 +1,31 @@
+<?php
+	$message_sent = false;
+	if(isset($_POST['email']) && $_POST['email'] != ''){
+		
+		if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+			// submite the form
+			$userName = $_POST['name'];
+			$userEmail = $_POST['email'];
+			$messageSubject = $_POST['subject'];
+			$message = $_POST['message'];
+		
+			$to = "nataliajonik@gmail.com";
+			$body = "";
+		
+			$body .="From: ".$userName. "\r\n";
+            $body .="Email: ".$userEmail. "\r\n";
+			$body .="Message: ".$message. "\r\n";
+		
+			mail($to,$messageSubject,$body);
+
+			$message_sent = true;
+		
+		}
+
+	}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -91,7 +119,7 @@
                                                 <li><a class="dropdown-item" href="Cercanias.html">Cercanías de Cracovia</a></li>
                                             </ul>
                                         </li>
-                                        <li class="active"><a href="kontakt.html">Contacto</a></li>
+                                        <li class="active"><a href="kontakt.php">Contacto</a></li>
                                         <li class="nav-item active">
                                         <li class="active"><a href="blog.html">Blog</a></li>
 
@@ -101,9 +129,9 @@
                                             <a class="nav-link dropdown-toggler"href="index.html" id="navbarLg" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Idioma
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarLg">
-                                                <li><a class="dropdown-item" href="kontakt.html"><span class="flag-icon flag-icon-es"> </span>Español</a></li>
-                                                <li><a class="dropdown-item" href="kontakt.html"><span class="flag-icon flag-icon-pt"> </span>Portugues</a></li>
-                                                <li><a class="dropdown-item" href="kontakt.html"><span class="flag-icon flag-icon-us"> </span>English</a></li>
+                                                <li><a class="dropdown-item" href="kontakt.php"><span class="flag-icon flag-icon-es"> </span>Español</a></li>
+                                                <li><a class="dropdown-item" href="kontakt.php"><span class="flag-icon flag-icon-pt"> </span>Portugues</a></li>
+                                                <li><a class="dropdown-item" href="kontakt.php"><span class="flag-icon flag-icon-us"> </span>English</a></li>
                                             </ul>
                                         </li>
                                 
@@ -124,31 +152,42 @@
 
         <!-- /.enguiry-form -->
         <!-- contact form -->
-        <div class="main-concept" >
-            <div class="container-kontact">
-            <form action="" methode="POST" class="/contact">
-                <div class="form-group">
-                    <label for="name" class="form-lable">Name</lable>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Juan Lopez" tabindex="1" required>
-                </div>
-                <div class="form-group">
-                    <label for="email" class="form-lable">Email</lable>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="juan.lopez@lopez.com" tabindex="2" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject" class="form-lable">Tema</lable>
-                    <input type="text" class="form-control" id="subject" name="subject" placeholder="hola!" tabindex="3" required>
-                </div>
-                <div class="form-group">
-                    <label for="message" class="form-lable">Mensaje</lable>
-                    <textarea rows="5" cols="50" class="form-control" id="message" name="message" placeholder="Enter Message..." tabindex="4" required></textarea>
-                </div>
-                <div>
-                    <button type="submit" class="btn">Manda Mensaje!</button>
-                </div>
-            </form>
+        <div class="main-concept">
+            <?php
+            if($message_sent):
+            ?>
+
+                <h3>Thanks, we'll be in touch</h3>
+            <?php
+            else:
+            ?>
+            <div class="container-kontakt">
+                <form action="kontakt.php" method="POST" class="form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="jane@doe.com" tabindex="2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello There!" tabindex="3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn">Send Message!</button>
+                    </div>
+                </form>
+            </div>
+            <?php
+            endif;
+            ?>
         </div>
-    </div>
 
         
 
@@ -173,7 +212,7 @@
                                 <li><a href="sobreMi.html ">Sobre mi</a></li>
                                 <li><a href="blog.html ">Blog</a></li>
                         
-                                <li><a href="kontakt.html">Contacto</a></li>
+                                <li><a href="kontakt.php">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
